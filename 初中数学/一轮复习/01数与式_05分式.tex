@@ -1,0 +1,398 @@
+\documentclass[cn,blue,12pt]{elegantbook}
+\input {d:/tex/preamble}
+
+\excludecomment{note}
+\excludecomment{solution}
+\renewcommand \tkt[1]{{\CJKunderline[hidden=true, skip=true, thickness=1pt]{#1}}}
+
+\begin{document}
+
+\chapter{分式}%
+\label{cha:分式}
+\begin{note}
+    【对接教材】人教:八上第十五章P126-P142;北师:八下第五章P108-P124.\\
+    【中考分值】(近9年必考,3或6分)
+\end{note}
+\section{知识要点}%
+\begin{zsyd}
+\item 基本概念
+    \begin{zsyd}
+    \item 定义:形如\tkt{\(\dfrac{A}{B}\)}的式子,其中\(A,B\)为两个\tkt{整式},\tkt{\(B \ne 0\)},且\tkt{\(B\)中含有字母}.
+    \item 分式\(\dfrac{A}{B}\)有意义的条件是: \tkt{\(B\ne 0\)}  ;
+    \item 分式\(\dfrac{A}{B}\)值为\(0\)的条件是:  \tkt{\(A=0, B\ne 0\)}  ;
+    \item 最简分式: \tkt{分子和分母没有公因式}的分式.
+    \item 【易错警示】分式化简时, 要将结果化成\tkt{最简结果}.
+    \end{zsyd}
+\item 分式的性质
+    \begin{zsyd}
+    \item 基本性质:分式的分子与分母\tkt{乘(或除以)同一个不等于0的整式},分式的值不变:
+    \item 符号变化法则:分式中\tkt{分式本身},\tkt{分子},\tkt{分母}三者有\tkt{两者同时}改变符号,分式值不变.如 \(\dfrac{2}{3}=\) \tkt{\(\dfrac{-2}{-3} = -\dfrac{-2}{3}=-\dfrac{2}{-3}\)}
+    \item 基本性质的应用:通分.\tkt{\(\dfrac{A}{B}=\dfrac{A\cdot C}{B\cdot C}\)}.
+    \item 基本性质的应用:约分.\tkt{\(\dfrac{A}{B}=\dfrac{A \div C}{B \div C}\)},其中\(A, B ,C\)是整式, 且\(c \ne 0\).
+    \end{zsyd}
+\item 分式的运算法则
+    \begin{zsyd}
+    \item 通分
+        \begin{zsyd}
+        \item 通分的概念:根据分式基本性质, 把\tkt{异分母}分式化为与原来的分式\tkt{相等}的\tkt{同分母}分式.
+        \item 通分的方法: 关键是寻找\tkt{最简公分母}.\ding{172}各分母能\tkt{因式分解}的先\tkt{因式分解}; \ding{173}取各分母中所有因式的\tkt{最高次幂的积}(数字因式取\tkt{最小公倍数}) 作为公分母.
+        \end{zsyd}
+    \item 约分
+        \begin{zsyd}
+        \item 约分的概念:把一个分式分子与分母的\tkt{公因式}约去.
+        \item 约分的方法: 关键是寻找分子. 分母的\tkt{公因式}.\ding{172}分子、分母能因式分解的先因式分解; \ding{173}取分子、分母中的\tkt{相同因式的最低次幂的积}(数字因式取\tkt{最大公约数}) 作为公因式.
+        \end{zsyd}
+    \item 分式的加减运算
+        \begin{zsyd}
+        \item \tkt{同分母}分式加减:分母不变,分子相加减.\(\dfrac{a}{c} \pm \dfrac{b}{c}\)=\tkt{\(\dfrac{a\pm b}{c}\)}  ;
+        \item \tkt{异分母}分式加减:先\tkt{通分},再按同分母分式的加减法则计算.\(\dfrac{a}{b}\pm \dfrac{c}{d}\)= \tkt{\(\dfrac{ad+bc}{bd}\)}
+        \end{zsyd}
+    \item 分式的乘除运算
+        \begin{zsyd}
+        \item 乘法运算:分子乘分子,分母乘分母.\(\dfrac{a}{b}\cdot \dfrac{c}{d}\)=  \tkt{\(\dfrac{ac}{bd}\)}  ;
+        \item 除法运算:先\tkt{转化为乘法},能\tkt{约分的约分}后再\tkt{按乘法法则}运算,\(\dfrac{a}{b} \div \dfrac{c}{d}\) =\tkt{\(\dfrac{a}{b}\cdot \dfrac{d}{c}\)} = \tkt{\(\dfrac{ad}{bc}\)}.
+        \end{zsyd}
+    \item 分式的混合运算:先\tkt{乘方}, 再乘除, 最后加减; 同级运算从左到右依次进行; 如有括号先计算括号内.
+    \end{zsyd}
+\end{zsyd}
+\section{重难点突破}%
+\label{sec:重难点突破}
+\begin{liti}[resume]
+\item 先化简,再求值:\(\dfrac{1}{x+1}-\dfrac{3-x}{x^2-6x+9}\div \dfrac{x^2+x}{x-3}\),其中\(x=-\dfrac{3}{2}\).\\
+    解:原式\(=\dfrac{1}{x+1}-\dfrac{3-x}{(x-3)^2}\cdot \dfrac{x-3}{x(x+1)}\) \qquad \textbf{除法变乘法,分子、分母因式分解}\\
+\(=\dfrac{1}{x+1}+\dfrac{1}{x(x+1)}\) \qquad \textbf{约分}\\
+\(=\dfrac{x+1}{x(x+1)}\) \qquad \textbf{通分}\\
+\(=\dfrac{1}{x}\) \qquad \textbf{化简为最简结果}\\
+当\( x =-\dfrac{3}{2}\)时,原式\(= -\dfrac{2}{3}\)\qquad \textbf{代值计算}
+
+\item 化简\((\dfrac{a^2}{a+1}-a+1)\div \dfrac{a-1}{a^2+2a+1}\)\\
+    解:原式\(=\dfrac{a^2-(a+1)^2}{a+1}\cdot \dfrac{(a+1)^2}{a-1}\) \qquad 第一步\\
+    \(=\dfrac{-2a-1}{a+1}\cdot \dfrac{(a+1)^2}{a-1}\) \qquad 第二步\\
+    \(=\dfrac{(-2a-1)\cdot (a+1)}{a-1}\) \qquad 第三步\\
+    \(=\dfrac{-(2a+1)(a+1)}{a-1}\) \qquad 第四步\\
+上述解法是从第\tkt{\qquad}步开始出现错误,请写出正确的解题过程.
+\begin{solution}
+    第一步,原式=\(\dfrac{a+1}{a-1}\)\\
+\end{solution}
+\item 单一化简型: \(\frac{a-2}{a^2-1}\cdot \frac{a^3+2a^2+a}{a^2-2a}\),其中\(a=-2\)\\
+\begin{solution}
+        \(\frac{a+1}{a-1}, \frac{1}{3}\)\\
+\end{solution}
+\item 双化简型:\((\frac{x^2-4}{x^2+x+1})^2 \div (\frac{x^3-2x^2}{x^3+x^2+x})^2\cdot \frac{x}{(x+2)^3}\),其中\(x^2+2x-2=0\)
+\begin{solution}
+        \(\frac{1}{x^2+2x}, \frac{1}{2}\)\\
+\end{solution}
+\item 桃李不言型:\(|2a-b+1|+(3a+\frac{3}{2}b)^2=0\),求\(\frac{b^2}{a+b}\div [(\frac{a}{a-b}-1)(a-\frac{a^2}{a+b})]\)
+\begin{solution}
+        \(a=-\frac{1}{4},b=\frac{1}{2}\)\\
+\end{solution}
+\item 倒数型:\(\frac{x}{x^2+x+1}=\frac{1}{10}\),求\(\frac{x^2}{x^4+x^2+1}\)
+\begin{solution}
+        由已知倒数得:\(x+\frac{1}{x}=9\),原式倒数化简得:\(x^2+\frac{1}{x^2}+1=(x+\frac{1}{x})^2-2+1=80\),原式=\(\frac{1}{80}\)\\
+\end{solution}
+\item 参数型:\(\frac{x}{2}=\frac{y}{3}=\frac{z}{4}\),求\(\frac{x^2-2y^2+3z^2}{xy+2yz+3xz}\)
+\begin{solution}
+        设\(\frac{x}{2}=\frac{y}{3}=\frac{z}{4}=k \Rightarrow x=2k,y=3k,z=4k\)\\
+        代入,原式化简得\(\frac{17}{27}\)
+\end{solution}
+\end{liti}
+
+\section{中考真题}%
+
+\subsection{分式有意义的条件(仅2018年考)}%
+\begin{zhenti}[resume]
+\item (2018江西7题3分)若分式\(\dfrac{1}{x-1}\)有意义,则\(x\)的取值范围为\tkt{\(x\ne 1\)}.
+\end{zhenti}
+
+\subsection{分式化简及求值(10年9考,仅2010年未考)}%
+\subsubsection{分式化简(10年6考)}%
+\begin{zhenti}[resume]
+\item (2018江西2题3分)计算\((-a)^2\cdot \dfrac{b}{a^2}\)的结果为(\qquad)\\
+    \begin{tasks}(4)
+        \task \(b\)
+        \task \(-b\)
+        \task \(ab\)
+        \task \(\dfrac{b}{a}\)
+    \end{tasks}
+\begin{solution}
+        A\\
+\end{solution}
+\item (2019江西2题3分)计算\(\dfrac{1}{a} \div (-\dfrac{1}{a^2}) \)的结果为(\qquad)\\
+    \begin{tasks}(4)
+        \task \(a\)
+        \task \(-a\)
+        \task \(-\dfrac{1}{a^3}\)
+        \task \(\dfrac{1}{a^3}\)
+    \end{tasks}
+\begin{solution}
+        B\\
+\end{solution}
+\item (2015江西4题3分)下列运算正确的是(\qquad)\\
+    \begin{tasks}(2)
+        \task \((2a^2)^3=6a^6\)
+        \task \(-a^2b^2 \cdot 3ab^3 = -3a^2b^5\)
+        \task \(\dfrac{b}{a-b}+\dfrac{a}{b-a}=-1\)
+        \task \(\dfrac{a^2-1}{a}\cdot \dfrac{1}{a+1}=-1\)
+    \end{tasks}
+\begin{solution}
+        C\\
+\end{solution}
+\item (2017江西13(1)题3分)计算:\(\dfrac{x+1}{x^2-1}\div \dfrac{2}{x-1}\)
+\begin{solution}
+        原式=\(\dfrac{x+1}{(x+1)(x-1)}\times \dfrac{x-1}{2}=\dfrac{1}{2}\)
+\end{solution}
+\item (2014江西15题6分)计算:\((\dfrac{x-1}{x}-\dfrac{1}{x})\div \dfrac{x-2}{x^2-x}\)
+\begin{solution}
+        原式=\(\dfrac{x-2}{x}\times \dfrac{x(x-1)}{x-2}=x-1\)\\
+\end{solution}
+\item (2012江西15题6分)化简:\((\dfrac{1}{a}-1)\div \dfrac{a^2-1}{a^2+a}\)
+\begin{solution}
+        原式=\(\dfrac{1-a}{a}\times \dfrac{a(a+1)}{(a+1)(a-1)}=-1\)\\
+\end{solution}
+\end{zhenti}
+\subsubsection{类型二:化简求值:给定值(10年2考)}%
+\begin{zhenti}[resume]
+\item (2016江西14题6分)先化简,再求值:\((\dfrac{2}{x+3}+\dfrac{1}{3-x})\div \dfrac{x}{x^2-9}\),其中\(x=6\)
+\begin{solution}
+        原式=\(\dfrac{x-9}{x}\),代入后得\(-\dfrac{1}{2}\)\\
+\end{solution}
+\item (2011江西17题6分)先化简,再求值:\((\dfrac{2a}{a-1}+\dfrac{a}{1-a})\div a\),其中\(a=\sqrt{2}+1\)
+\begin{solution}
+        原式=\(\dfrac{1}{a-1}\),代入后=\(\dfrac{\sqrt{2}}{2}\)\\
+\end{solution}
+\item (2019黄石)先化简,再求值:\(\dfrac{3}{x+2}+x-2)\div \dfrac{x^2-2x+1}{x+2}\),其中\(|x|=2\).
+\begin{solution}
+        原式=\(\dfrac{x+1}{x-1}\)\\
+        代入:\(|x|=2 \Rightarrow x=\pm 2,\text{又}x+2 \ne 0,x-1\ne 0 ,\therefore x=2\),原式\(=3\)
+\end{solution}
+\end{zhenti}
+
+\subsubsection{类型三:化简求值-选值代入(仅2013年考查)}%
+\begin{zhenti}[resume]
+\item (2013江西17题6分)先化简,再求值:\(\dfrac{x^2-4x+4}{2x}\div \dfrac{x^2-2x}{x^2}+1\),在\(0,1,2\)三个数中选一个合适的,代入求值.
+\begin{solution}
+        原式=\(\dfrac{x}{2},x\ne 0,x\ne 2\),代入1,得\(\dfrac{1}{2}\)\\
+\end{solution}
+\item (2019荆州)先化简\((\dfrac{a}{a-1}-1)\div \dfrac{2}{a^2-a}\),然后从\(-2\le a <2\)中选出一个合适的整数作为\(a\)的值代入求值.
+\begin{solution}
+        原式=\(\dfrac{a}{2},a\ne 0,a\ne 1\),取\(a=-1\)代入,得\(-\dfrac{1}{2}\)\\
+\end{solution}
+\end{zhenti}
+\section{强化训练}%
+\label{sec:强化训练}
+
+\subsection{基础篇}%
+\begin{xiti}[resume]
+\item 下列式子中,哪些是分式\(?\)哪些是整式\(?\)
+    \begin{multicols}{3}
+        \begin{xiti}
+            \setlength{\itemsep}{1.5ex}
+        \item \(\dfrac{x}{2}\)
+        \item \(\dfrac{3}{x+1}\)
+        \item \(2y\)
+        \item \(-\dfrac{1}{-2ac}\)
+        \item \(x+y^2\)
+        \item \(\dfrac{1}{9}m^2+n\)
+        \item \(\dfrac{-m}{\pi }\)
+        \item \(\dfrac{3a-b}{a+b}\)
+        \item \(\dfrac{m^7}{m^3}\)
+        \item \(\dfrac{1}{2}x-\dfrac{4}{5}y\)
+        \item \(\dfrac{1}{\pi +3}\)
+        \item \(\dfrac{\pi}{m+2}\)
+        \item \(\dfrac{x^2-2x+1}{x-1}\)
+        \end{xiti}
+    \end{multicols}
+\begin{solution}
+        3,4,8, 9, 12,13\\
+\end{solution}
+\item 下列分式有意义的条件是什么?
+    \begin{multicols}{2}
+        \begin{xiti}
+            \setlength{\itemsep}{1.5ex}
+        \item \(\dfrac{1}{x}\)
+\begin{solution}
+                \(x \ne 0\)\\
+\end{solution}
+        \item \(\dfrac{3}{x+3}\)
+\begin{solution}
+    \(x \ne -3\)\\
+\end{solution}
+        \item \(\dfrac{x+y}{x^2+y^2}\)
+\begin{solution}
+                x,y不同时为0\\
+\end{solution}
+        \item \(\dfrac{x+y}{x^2-y^2}\)
+\begin{solution}
+                \(x\ne \pm y\)\\
+\end{solution}
+        \item \(\dfrac{1}{x^2+3}\)
+\begin{solution}
+                x取任意实数\\
+\end{solution}
+        \end{xiti}
+    \end{multicols}
+\item 当\( x \)为何值时,下列分式的值为零?
+    \begin{multicols}{2}
+        \begin{xiti}
+            \setlength{\itemsep}{1.5ex}
+        \item \(\dfrac{x+1}{x}\)
+\begin{solution}
+                \(x=-1\)\\
+\end{solution}
+        \item \(\dfrac{x^2-1}{x+1}\)
+\begin{solution}
+                \(x=1\)\\
+\end{solution}
+        \item \(\dfrac{|x|-3}{x-3}\)
+\begin{solution}
+                \(x=-3\)\\
+\end{solution}
+        \item \(\dfrac{x^2+3}{x+7}\)
+\begin{solution}
+                不存在这样的x\\
+\end{solution}
+        \item \(\dfrac{x^2+2x-3}{x-1}\)
+\begin{solution}
+                \(x=-3\)\\
+\end{solution}
+        \item \(\dfrac{x^2-4}{x^2+2x}\)
+\begin{solution}
+                \(x=2\)\\
+\end{solution}
+        \end{xiti}
+    \end{multicols}
+\item 回答下列问题:
+    \begin{xiti}
+        \setlength{\itemsep}{4.5ex}
+    \item 分式\(\dfrac{x-6}{x+5}\)的值为正数,求\( x \)的取值范围
+\begin{solution}
+                \(x>6\text{或}x<-5\)\\
+\end{solution}
+    \item \(\dfrac{x^2+1}{x-9}\)的值为负数,求\(x\)的取值范围;
+\begin{solution}
+                \(x<9\)\\
+\end{solution}
+    \item 分式\(\dfrac{|x-4|}{2x-11}\)的值为负数,求\(x\)的取值范围;
+\begin{solution}
+                \(x<\frac{11}{2}\text{且}x\ne 4\)\\
+\end{solution}
+    \item 分式\(\dfrac{x^2-3x+1}{x^2+5x-9}\)的值为\(1\),求\(x\)的取值.
+\begin{solution}
+                \(x=\frac{5}{4}\)\\
+\end{solution}
+    \end{xiti}
+\item 约分:
+    \begin{multicols}{2}
+        \begin{xiti}
+            \setlength{\itemsep}{4.5ex}
+        \item \(\dfrac{(2x-y)^2}{y-2x}\)
+\begin{solution}
+                \(y-2x\)\\
+\end{solution}
+        \item \(\dfrac{(3b-2a)^2}{(2a-3b)^3}\)
+\begin{solution}
+                \(\frac{1}{2a-3b}\)\\
+\end{solution}
+        \item \(\dfrac{4x^2-9y^2}{4x^2+12xy+9y^2}\)
+\begin{solution}
+                \(\frac{2x-3y}{2x+3y}\)\\
+\end{solution}
+        \item \(\dfrac{a^2-b^2-c^2+2bc}{c^2-a^2-b^2+2ab}\)
+\begin{solution}
+                \(\frac{a+b-c}{c-a+b}\)\\
+\end{solution}
+        \end{xiti}
+    \end{multicols}
+\item 通分:
+    \begin{xiti}
+        \setlength{\itemsep}{4.5ex}
+    \item \(\dfrac{1}{2x}, \dfrac{4}{3xy^2}, -\dfrac{9}{4y}\)
+\begin{solution}
+            最简公分母: \(12xy^2\)\\
+\end{solution}
+    \item \(\dfrac{2}{7-7a}, \dfrac{3a}{1-2a+a^2}, \dfrac{1}{a^2-1}\)
+\begin{solution}
+            最简公分母: \(7(a+1)(a-1)^2\)\\
+\end{solution}
+    \item \(\dfrac{1}{x^2-4x-5}, \dfrac{x}{x^2+3x+2}, \dfrac{x^2}{x^2-3x-10}\)
+\begin{solution}
+            最简公分母: \((x-5)(x+1)(x+2)\)\\
+\end{solution}
+    \end{xiti}
+\item 写出下列各等式中未知的分子或分母:
+    \begin{xiti}
+        \setlength{\itemsep}{4.5ex}
+    \item \(\dfrac{9-x^2}{(x+3)^2}=\dfrac{?}{x+3}\)
+    \item \(\dfrac{?}{m^2+11m}=\dfrac{1}{m+11}\)
+    \end{xiti}
+\begin{solution}
+        (1) \(3-x\)\\
+        (2) \(m\)
+\end{solution}
+\item 不改变分式的值,将下列分式的分子、分母的系数化为整数:
+    \begin{multicols}{3}
+        \begin{xiti}
+            \setlength{\itemsep}{2.5ex}
+        \item \(\dfrac{0.3x}{4y}\)
+        \item \(\dfrac{0.7x-0.05y}{0.03x+0.2y}\)
+        \item \(\dfrac{-\dfrac{1}{12}x}{\dfrac{1}{24}y}\)
+        \end{xiti}
+    \end{multicols}
+\begin{solution}
+        (1) \(\frac{3x}{40y}\); (2) \(\frac{70x-5y}{3x+20y}\); (3) \(-\frac{2x}{y}\)\\
+\end{solution}
+\item 不改变分式的值,使分式的分子、分母的符号都为正:
+    \begin{multicols}{3}
+        \begin{xiti}
+            \setlength{\itemsep}{1.5ex}
+        \item \(\dfrac{-3x}{7xy}\)
+        \item \(\dfrac{4x}{-5y}\)
+        \item \(\dfrac{-2m}{-17n}\)
+        \item \(-\dfrac{4a}{-3a^2-5}\)
+        \item \(-\dfrac{-x^2}{3x+7}\)
+        \item \(-\dfrac{-9x}{-4x-1}\)
+        \end{xiti}
+    \end{multicols}
+\begin{solution}
+        (1) \(-\frac{3x}{7xy}\); (2) \(-\frac{4x}{5y}\) (3) \(\frac{2m}{17n}\)\\
+        (4) \(\frac{4a}{3a^2+5}\); (5) \(\frac{x^2}{3x+1}\); (6) \(-\frac{9x}{4x+1}\)
+\end{solution}
+\item 计算:
+    \begin{multicols}{2}
+        \begin{xiti}
+            \setlength{\itemsep}{4.5ex}
+        \item \(\dfrac{x+8}{2x-x^2}\cdot \dfrac{x^2-4}{3x+24}\cdot \dfrac{3}{x+2}\)
+        \item \(\dfrac{3+3y}{x^2-y^2}-\dfrac{x+2y}{x^2-y^2}+\dfrac{2x-3y}{x^2-y^2}\)
+        \item \(\dfrac{x+2y}{x^2-y^2}+\dfrac{y}{y^2-x^2}+\dfrac{2x}{x^2-y^2}\)
+        \item \(\dfrac{1}{6x-4y}-\dfrac{1}{6x+4y}-\dfrac{3x}{4y^2-9x^2}\)
+        \end{xiti}
+    \end{multicols}
+\begin{solution}
+        (1) -\(\frac{1}{x}\); (2) \(\frac{2}{x+y}\); (3) \(\frac{3x+y}{x^2-y^2}\); (4) \(\frac{1}{3x-2y}\)
+\end{solution}
+\end{xiti}
+\subsection{强化篇}%
+\begin{xiti}[resume]
+    \setlength{\itemsep}{4.5ex}
+\item 计算:
+    \begin{xiti}[resume]
+        \setlength{\itemsep}{4.5ex}
+    \item \(-\dfrac{6a^2b}{a^2-9b^2}-\dfrac{9b^2}{a+3b}-a+3b\)
+    \item \(\dfrac{1}{1-x}+\dfrac{1}{1+x}+\dfrac{2}{1+x^2}+\dfrac{4}{1+x^4}\)
+    \item \(\dfrac{1}{(x+1)(x+2)}+\dfrac{1}{(x+2)(x+3)}+\dfrac{1}{(x+3)(x+4)}+\cdots+\dfrac{1}{(x+9)(x+10)}\)
+    \end{xiti}
+\begin{solution}
+        (1) \(=-\frac{6a^2b}{a^2-9b^2}-\frac{9b^2}{a+3b}-\frac{a^2-9b^2}{a+3b}=\frac{-a^2}{a^2-3b^2}\)\\
+        (2) \(=\frac{2}{1-x^2}+\frac{2}{1+x^2}+\frac{4}{1+x^4}=\frac{4}{1-x^4}+\frac{4}{1+x^4}=\frac{8}{1-x^8}\)\\
+        (3) \(=\frac{1}{x+1}-\frac{1}{x+2}+\frac{1}{x+2}-\frac{1}{x+3}\cdots=\frac{1}{x+1}-\frac{1}{x+10}=\frac{9}{x^2+11x+10}\)
+\end{solution}
+\item 先化简,再求值:\(\dfrac{a-1}{a+2}\cdot \dfrac{a^2-4}{a^2-2a+1}\div \dfrac{1}{a^2-1}\),其中\(a\)满足\(a^2-a=0\)
+\begin{solution}
+        原式=\(a^2-a-2\),代入后得\(-2\)
+\end{solution}
+\item 已知\(2a-3b+c=0,3a-2b-6c=0,a、b、c\ne 0\),求\(\dfrac{a^3-2b^3+4c^3}{a^2b-2b^2c+3ac^2}\)
+\begin{solution}
+        \(b=3c,a=4c\),原式=\(\frac{1}{3}\)
+\end{solution}
+\end{xiti}
+\end{document}
